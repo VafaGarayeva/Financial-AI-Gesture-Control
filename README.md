@@ -4,25 +4,27 @@
 
 ## 🔥 Project Overview
 
-This is a **real-time AI-powered fraud detection system** that combines:
+This project is a **real-time AI-powered fraud detection system** that combines:
 
-- 🧠 Machine Learning
-- 🎥 Computer Vision
-- ✋ Gesture Recognition
-- 📊 Live Risk Visualization
-- ⚡ Real-time transaction simulation
+- 🧠 Machine Learning (Isolation Forest)
+- 🎥 Computer Vision (OpenCV)
+- ✋ Gesture Recognition (MediaPipe)
+- 📊 Live Risk Visualization Dashboard
+- ⚡ Real-time transaction simulation engine
 
-The system simulates financial transactions and analyzes them using AI to detect suspicious activity in real time.
+It simulates financial transactions and detects fraudulent activity in real time using AI + webcam interaction.
 
 ---
 
 ## ⚙️ How It Works
 
-💳 The system reads transaction data from a dataset (`creditcard.csv`)  
-🧠 AI model (Isolation Forest) detects anomalies  
-📊 Each transaction is assigned a **risk score (0–100%)**  
-🎥 Webcam tracks hand movements using MediaPipe  
-✋ Gestures control system actions (swipe, alert trigger)
+💳 Transactions are read from dataset (`creditcard.csv`)  
+🧠 AI model analyzes each transaction for anomalies  
+📊 Each transaction gets a **risk score (0–100%)**  
+🎥 Webcam tracks hand movements in real time  
+✋ Gestures control system behavior  
+
+The system provides a **live cyber-security style dashboard** with dynamic updates.
 
 ---
 
@@ -38,45 +40,63 @@ The system simulates financial transactions and analyzes them using AI to detect
 
 ## 🧠 AI Model Details
 
-- Algorithm: **Isolation Forest**
-- Features: Time, Amount
+- Algorithm: Isolation Forest
+- Type: Unsupervised Anomaly Detection
+- Features Used:
+  - Time
+  - Amount
 - Preprocessing: StandardScaler
-- Output: Anomaly score → normalized risk level
+- Output: Fraud probability → converted into risk score (0–100%)
 
 ---
 
 ## 📊 Risk Levels
 
-🟢 SAFE → Low risk transactions  
-🟠 SUSPICIOUS → Medium risk activity  
-🔴 HIGH RISK → Potential fraud detected  
+🟢 SAFE → Normal transaction behavior  
+🟠 SUSPICIOUS → Slight anomaly detected  
+🔴 HIGH RISK → Strong fraud indication  
 
 ---
 
 ## ⚡ Key Features
 
-✔ Real-time transaction simulation  
-✔ AI-based fraud detection engine  
-✔ Gesture-controlled interface  
-✔ Live risk graph visualization  
+✔ Real-time fraud detection engine  
+✔ AI-based anomaly scoring system  
+✔ Gesture-controlled interface (hands-free control)  
+✔ Live transaction feed UI  
+✔ Dynamic risk graph visualization  
 ✔ Fraud alert system with sound 🔊  
-✔ Dynamic transaction feed UI  
-✔ Smooth cinematic dashboard  
+✔ Cyber-security inspired dashboard design  
+✔ Smooth cinematic UI experience  
 
 ---
 
 ## 🛠️ Tech Stack
 
-- 🐍 Python  
-- 🎥 OpenCV  
-- ✋ MediaPipe  
-- 🧠 Scikit-learn  
-- 📊 Pandas  
-- 🔢 NumPy  
-- 🔊 Playsound  
-- 🧵 Threading  
+- 🐍 Python
+- 🎥 OpenCV
+- ✋ MediaPipe
+- 🧠 Scikit-learn
+- 📊 Pandas
+- 🔢 NumPy
+- 🔊 Playsound
+- 🧵 Threading
 
 ---
 
 ## 📁 Project Structure
+AI-Fraud-Detection-System/
+│
+├── main.py # Main application (AI + CV system)
+├── creditcard.csv # Transaction dataset
+├── alert.mp3 # Fraud alert sound
+├── requirements.txt # Python dependencies
+└── README.md # Project documentation
 
+---
+
+## 🚀 How to Run
+
+```bash
+pip install -r requirements.txt
+python main.py
