@@ -100,3 +100,10 @@ AI-Fraud-Detection-System/
 ```bash
 pip install -r requirements.txt
 python main.py
+
+## ⚠️ Notes
+
+- Ensure good lighting for webcam detection
+- Make sure `alert.mp3` exists in project folder
+- Dataset `creditcard.csv` must be present
+- Run on a system with decent performance for smooth real-time processing
